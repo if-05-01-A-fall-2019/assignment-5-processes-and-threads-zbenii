@@ -7,6 +7,7 @@ package simpleshell;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 /**
@@ -19,15 +20,27 @@ public class SimpleShell {
        System.out.print(">");
         Scanner s = new Scanner(System.in);
         String input = s.nextLine();
-        
-        ProcessBuilder pB = new ProcessBuilder().inheritIO().command(input);
-        pB.directory(new File("C:/SCHULE/TINF"));
-        Process process=pB.start();
-        
-        System.out.println(process.getOutputStream());
-        int exitCode = process.waitFor();
-        assert exitCode == 0;
-        System.exit(0);
+
+        String[] trimmedInput=input.trim().split("&");
+        for (int i = 0; i < trimmedInput.length; i++) {
+            runShell(trimmedInput[i]);
+        }
         
     }
+
+    static void runShell(String command) throws IOException,InterruptedException{
+        Process p=new ProcessBuilder().inheritIO().command("bash", "-c",command).start();
+        InputStream stream=p.getInputStream();
+
+        int x= stream.read();
+        while(x != -1) {
+            System.out.print((char) x);
+            x = stream.read();
+        }
+
+        int exitCode=p.waitFor();
+        assert exitCode == 0;
+    }
+
+
 }
