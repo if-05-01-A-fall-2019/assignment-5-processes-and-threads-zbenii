@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a0628b3-9402-4b3e-8fdf-1f3633285b59" name="Default Changelist" comment="" />
+    <list default="true" id="b39b9858-cfa4-4ba9-858b-a3fe301b6e99" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,14 +11,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1TIYUPF2pGKeVIdBNwERvlnCYiH" />
+  <component name="ProjectId" id="1TIeJqLKPC4wihubnHesgTIPvNL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FibonacciParallel" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -32,38 +29,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="SimpleShell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="simpleshell.SimpleShell" />
-      <module name="SimpleShell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="simpleshell.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.SimpleShell" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7a0628b3-9402-4b3e-8fdf-1f3633285b59" name="Default Changelist" comment="" />
-      <created>1573149092292</created>
+      <changelist id="b39b9858-cfa4-4ba9-858b-a3fe301b6e99" name="Default Changelist" comment="" />
+      <created>1573151967933</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573149092292</updated>
-      <workItem from="1573149096900" duration="2134000" />
-      <workItem from="1573151465345" duration="85000" />
+      <updated>1573151967933</updated>
+      <workItem from="1573151969465" duration="842000" />
     </task>
     <servers />
   </component>
@@ -75,9 +51,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>

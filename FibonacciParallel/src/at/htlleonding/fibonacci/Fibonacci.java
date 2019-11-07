@@ -23,6 +23,11 @@
  */
 package at.htlleonding.fibonacci;
 
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
 /**
  *
  * @author P. Bauer <p.bauer@htl-leonding.ac.at>
@@ -36,16 +41,16 @@ public class Fibonacci {
             return getNumberSingle(n - 1) + getNumberSingle(n - 2);
     }
 
-    static int getNumberParallel(int n) {
-        Thread t1 = new Thread(new Runnable() {
+    static int getNumberParallel(int n) throws ExecutionException,InterruptedException {
+        if (n < 2)
+            return 1;
 
-            @Override
-            public void run() {
-                
-            }
-            
-        });
-        return 1;
+        ExecutorService service= Executors.newFixedThreadPool(2);
+        Future<Integer> n1=service.submit(() -> getNumberSingle(n-1));
+        Future<Integer> n2=service.submit(() -> getNumberSingle(n-2));
+        service.shutdown();
+
+        return n1.get()+n2.get();
     }
     
 }
